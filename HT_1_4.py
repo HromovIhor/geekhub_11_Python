@@ -1,3 +1,9 @@
-Str_1 = input('Please specify the 1st string:\n')
-Str_2 = input('Please specify the 2nd string:\n')
-print('The concatenated string: ', " ".join([Str_1, Str_2]))
+number_of_strings = int(input("Specify the number of strings you want to concatenate? - "))
+
+final_string = ""
+
+for i in range(number_of_strings):
+    input_string = str(input(" "))
+    final_string += input_string
+
+print(final_string)
